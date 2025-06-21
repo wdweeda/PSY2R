@@ -36,17 +36,8 @@ def SmrPercentile(p, q, tau, a):
     else:
         return 1 - MultipleIntegral(p, q, tau, a)
 
-# Additional implementations for the functions called in the provided code
-def Gmqlpct(l, arglist):
-    # Implement Gmqlpct function logic here
-    pass
-
 def MultipleIntegral(p, q, tau, l):
     # Implement MultipleIntegral function logic here
-    pass
-
-def Davis(p, q, a):
-    # Implement Davis function logic here
     pass
 
 # def BrentZero(zerofn, lower, upper, arglist, e1, e2):
@@ -307,3 +298,7 @@ def IncompleteGamma(x, p):
 
 def Gamma(xx: float) -> float:
     return math.exp(LnGamma(xx))
+
+quick_test_2 = SmrCriticalValue(2,6,1200,0.95)
+
+print("Crit Val:", quick_test_2)
